@@ -1,0 +1,27 @@
+//C Program to find largest element of an Array
+
+#include<stdio.h>
+
+
+int largest_element(int arr[],int num){
+
+   int max_element;
+
+   max_element=arr[0];
+   for(int i=1; i<num; i++)
+    if(arr[i]>max_element)
+      max_element=arr[i];
+
+
+   return max_element;
+}
+
+
+int main()
+{
+
+    int arr[]={1,24,145,20,8,-101,300};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    printf("Largest element of array is %d",largest_element(arr,n));
+    return 0;
+}
