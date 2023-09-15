@@ -1,3 +1,4 @@
+//C Program to Sort set of strings in alphabetical order
 #include <stdio.h>
 #include <string.h>
 
